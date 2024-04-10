@@ -1,47 +1,76 @@
 #quoteBox {
     width: 450px;
-    height: 200px;
-    background-color: lavenderblush;
+    min-height: 150px;
+   /* height:fit-content;*/
+    background-color:whitesmoke;
+    
     border:  1px solid black;
     border-radius:15px;
-    display: relative;
-   /* margin:25vh auto;*/
-   
+    z-index: 0;
+    display:grid;
+    grid-template-rows: 150px 30px;
 }
 
 #btn{
     height: fit-content;
+    border-radius: 15px;
+    background-color: white;
 
 }
 #btnBox{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    gap:20px;
+    gap:10px;
     
+}
+#quoteTextBox{
+   padding: 30px;
+   padding-bottom: auto;
+   padding-top: auto;
+   align-self: center;
+   justify-self: center;
+}
+#quoteText{
+    /*font-family: "Gideon Roman", serif;*/
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    font-size: xx-large;
+    font-style: italic;
+    color: black;
 }
 #outerBox
 {
     display: grid;
     grid-template-columns: max-content;
-    grid-template-rows: 200px fit-content;
+    grid-template-rows: fit-content fit-content;
     row-gap: 20px;
     /*margin: 25vh auto;*/
-    
 }
-
 
 svg{
     background-color: white;
-    
+    color: blue;
     
 }
+#authorText{
+    font-weight: 500;
+}
+
 #authorBox{
 height:30px;
 width:450px;
 border:0.5px solid black;
 border-radius:15px;
-margin-top:170px ;
+padding: 0px;
+display:flex;
+justify-content: center;
+align-items: center;
+
+
+/*position: absolute;
+margin:0;
+    top: 321px;*/
 }
 html, body 
 {
