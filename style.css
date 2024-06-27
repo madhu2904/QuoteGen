@@ -79,6 +79,8 @@ html, body
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
   }
   
   body {
@@ -97,4 +99,10 @@ html, body
       100% {
           background-position: 0% 50%;
       }
+  }
+  h1{
+   color: black;
+   font-family:'Times New Roman', Times, serif;
+   font-style: oblique;
+    
   }
